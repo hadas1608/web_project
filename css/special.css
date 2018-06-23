@@ -17,3 +17,25 @@
 .show {
     display: block;
 }
+
+.cart-pic {
+    width:72px;
+    height:72px;
+}
+
+.media-object {
+    width:72px;
+    height:72px;
+}
+
+#product_name{
+    margin-left:20px;
+}
+
+.section-heading{
+    margin-top:20px;
+}
+
+.glyphicon-wishlist{
+    float:right;
+}
