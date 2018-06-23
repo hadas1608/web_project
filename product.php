@@ -38,7 +38,7 @@
           <a class="nav-link js-scroll-trigger" href="index.html#about">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="">Catalog</a>
+          <a class="nav-link js-scroll-trigger" href="catalog.php">Catalog</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="index.html#stores">Find Store</a>
