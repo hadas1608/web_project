@@ -176,7 +176,37 @@
     </div>
   </div>
 </section>
+<section>
 
+  <?php
+    $servername = "sql205.byethost18.com";
+    $username = "b18_22249963";
+    $password = "Ruby!234";
+    $dbname = "b18_22249963_Jewels";
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    if ($conn->connect_error) {
+    die("Connection error: $conn->connection_error");
+    }
+
+    $sql = 'select * from Jewels';
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0)
+    {
+      while ($row = $result->fetch_assoc())
+      {
+        echo 'name: ' . $row['name'] . ' type: ' . $row['type'] . '<br>';
+      }
+    }
+    else
+    {
+      echo '0 results';
+    }
+    $conn->close();
+  ?>
+</section>
 
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
