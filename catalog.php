@@ -74,17 +74,7 @@
     </div>
 
     <?php
-        $servername = "localhost";
-        $username = "id6282262_ruby";
-        $password = "Ruby!234";
-        $dbname = "id6282262_jewels";
-
-        // Create connection
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        if ($conn->connect_error) {
-          die("Connection error: $conn->connection_error");
-        }
-
+        include ("connection.php");
         $sql = 'SELECT * FROM Jewels;';
         $result = $conn->query($sql);
         if (is_object($result)  && $result->num_rows > 0)
@@ -96,7 +86,7 @@
                 <div class="filterDiv '. $row['type']. ' ' . $row['Material'] .'">
                   <div class="service-box mt-5 mx-auto">
                     <a href="product.php?name=' .$row['name']. '">
-                      <img class="img-fluid" src="data:image/jpeg;base64,' .base64_encode($row['picture']). '>
+                      <img class="img-fluid" src="img' .$row['picture']. '">
                     </a>
                     <h4 class="mb-3">' .$row['name']. '&nbsp' .$row['type']. '</h4>
                     <p class="text-muted mb-0">' .$row['price']. '</p>
@@ -110,7 +100,6 @@
         {
           echo '0 results';
         }
-        $conn->close();
       ?>
   </div>
 </section>
