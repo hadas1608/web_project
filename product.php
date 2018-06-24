@@ -41,6 +41,9 @@
           <a class="nav-link js-scroll-trigger" href="catalog.php">Catalog</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="customized.php">Customized</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="index.html#stores">Find Store</a>
         </li>
         <li class="nav-item">
@@ -55,33 +58,38 @@
 
 <section class="bg-white" id="product">
   <div class="row">
-    <div class="col-lg-6 col-md-8 bg-light text-center">
-      <div class="service-box mt-5 mx-auto">
-        <form>
-          <div class="container">
-              <h3>Emma Ring</h3>
-              <h2>1300$</h2>
-              <p>Material: 14K or 18K white Gold
-                 <br>
-                 Gemstone: Diamond
-                 <br>
-                 Hand made in our studio
-                 <br>
-                 Made-to-order
-              </p>
-              <label for="Own words">Write your own words:</label>
-              <input type="text" placeholder="up to 20 chars">
-              <button type="Add to cart" class="btn btn-primary">Add to cart</button>
-          </div>
-        </form>
+    <?php
+      include ("connection.php");
+      $sql = 'SELECT * FROM Jewels WHERE name="'. $_GET['name'] .'";';
+      $result = $conn->query($sql);
+      if (is_object($result)  && $result->num_rows > 0);
+      $row = $result->fetch_assoc();
+
+      echo '<div class="col-lg-6 col-md-8 bg-light text-center">
+        <div class="service-box mt-5 mx-auto">
+          <form>
+            <div class="container">
+                <h3>' .$row['name'] . ' ' . $row['type']. '</h3>
+                <h2>' .$row['price'] .' $</h2>
+                <p>Material: ' .$row['Material'] .'
+                   <br>
+                   Gemstone:' .$row['gemstone'] .'
+                   <br>' .$row['Description'] . '
+                </p>
+                <label for="Own words">Write your own words:</label>
+                <input type="text" placeholder="up to 20 chars">
+                <button type="Add to cart" class="btn btn-primary">Add to cart</button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
-  <div class="col-lg-6 col-md-8 text-center border border-secondary">
-    <div class="service-box mt-5 mx-auto">
-      <img src="img/rings/ring5.jpg">
-    </div>
+      <div class="col-lg-6 col-md-8 text-center border border-secondary">
+        <div class="service-box mt-5 mx-auto">
+          <img src="img/' .$row['picture'] .' ">
+        </div>
+      </div>';
+    ?>
   </div>
-</div>
 </section>
 
 
