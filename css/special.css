@@ -36,6 +36,11 @@
     margin-top:20px;
 }
 
-.glyphicon-wishlist{
+#wishlist_button{
     float:right;
+}
+
+.logo-img{
+    height:40px;
+    width:40px;
 }
