@@ -41,7 +41,7 @@
           <a class="nav-link js-scroll-trigger" href="catalog.php">Catalog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#Customized">Customized</a>
+          <a class="nav-link js-scroll-trigger" href="customized.php">Customized</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="index.html#stores">Find Store</a>
