@@ -60,6 +60,8 @@ function AddtoWishList(customized=false)
     localStorage.setItem('wishlist', JSON.stringify(oldItems));
 
 
+    alert("Product was added successfully!");
+
     //call display function to show on screen
     // displayWishList();
     return false;
