@@ -61,69 +61,70 @@
       </div>
     </nav>
 
-
-<section class="bg-white" id="customize">
-  <div class="row">
-    <div class="col-lg-6 mx-auto text-center">
-      <h2 class="section-heading text-primary">Customize your own jewels!</h2>
-      <hr class="light my-4">
-      <p class="text-faded mb-4 text-primary">We invite you to select your preferred material, stone color and to write anything you want inside the ring </p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-6 col-md-8 bg-light text-center">
-      <div class="service-box mt-5 mx-auto">
-        <form action="POST" method="wishlist.php">
-          <div class="container">
-            <div>
-              <label for="Own words">Write your own words:</label>
-              <input type="text" placeholder="up to 20 chars">
-              <br><br>
-            </div>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Material<span class="caret"></span></button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <li><a class="dropdown-item" href="#">Gold</a></li>
-                <li><a class="dropdown-item" href="#">Silver 925</a></li>
-                <li><a class="dropdown-item" href="#">Gold Plated</a></li>
-              </ul>
-            </div>
-            <br>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Size(cm)<span class="caret"></span></button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <li><a class="dropdown-item" href="#">11</a></li>
-                <li><a class="dropdown-item" href="#">12</a></li>
-                <li><a class="dropdown-item" href="#">13</a></li>
-              </ul>
-            </div>
-            <br>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Stone<span class="caret"></span></button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <li><a class="dropdown-item" href="#">Diamond</a></li>
-                <li><a class="dropdown-item" href="#">Ruby</a></li>
-                <li><a class="dropdown-item" href="#">Emerald</a></li>
-              </ul>
-            </div>
-            <br>
-            <button type="submit" class="btn btn-primary">Add to cart</button>
-            <button type="submit" class="btn btn-primary">Save to wishlist</button>
-          </div>
-        </form>
+    <section class="bg-white" id="customize">
+    <div class="row">
+      <div class="col-lg-6 mx-auto text-center">
+        <h2 class="section-heading text-primary">Customize your own jewels!</h2>
+        <hr class="light my-4">
+        <p class="text-faded mb-4 text-primary">We invite you to select your preferred material, stone color and to write anything you want inside the ring </p>
       </div>
     </div>
-  <div class="col-lg-6 col-md-8 text-center border border-secondary">
-    <div class="service-box mt-5 mx-auto">
-      <img src="img/rings/ring5.jpg">
+    <div class="row">
+      <div class="col-lg-6 col-md-8 bg-light text-center">
+        <div class="service-box mt-5 mx-auto">
+          <form onsubmit="return formFalse()">
+            <div class="container">
+              <div>
+                <label for="Own words">Write your own words:</label>
+                <input type="text" placeholder="up to 20 chars">
+                <br><br>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Material<span class="caret"></span></button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><a class="dropdown-item" href="#">Gold</a></li>
+                  <li><a class="dropdown-item" href="#">Silver 925</a></li>
+                  <li><a class="dropdown-item" href="#">Gold Plated</a></li>
+                </ul>
+              </div>
+              <br>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Size(cm)<span class="caret"></span></button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><a class="dropdown-item" href="#">11</a></li>
+                  <li><a class="dropdown-item" href="#">12</a></li>
+                  <li><a class="dropdown-item" href="#">13</a></li>
+                </ul>
+              </div>
+              <br>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Stone<span class="caret"></span></button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><a class="dropdown-item" href="#">Diamond</a></li>
+                  <li><a class="dropdown-item" href="#">Ruby</a></li>
+                  <li><a class="dropdown-item" href="#">Emerald</a></li>
+                </ul>
+              </div>
+              <br>
+              <button class="btn btn-primary" onclick=AddtoCart(true)>Add to cart</button>
+              <button class="btn btn-primary" onclick="AddtoWishList(true)">Save to wishlist</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-8 text-center border border-secondary">
+        <div class="service-box mt-5 mx-auto">
+          <img src="img/rings/ring5.jpg">
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-</section>
+    </section>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--<script src="myscripts.js"></script>-->
+
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -132,12 +133,15 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
-    <script>
-$(".dropdown-menu li a").click(function(){
-  $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>' );
-  $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
+    <script src="js/wishlist.js"></script>
 
-});
+
+    <script>
+      $(".dropdown-menu li a").click(function(){
+        $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>' );
+        $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
+
+      });
     </script>
   </body>
 

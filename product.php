@@ -67,10 +67,10 @@
 
       echo '<div class="col-lg-6 col-md-8 bg-light text-center">
         <div class="service-box mt-5 mx-auto">
-          <form>
+          <form onsubmit="return formFalse()">
             <div class="container">
-                <h3>' .$row['name'] . ' ' . $row['type']. '</h3>
-                <h2>' .$row['price'] .' $</h2>
+                <h3 id="product_name">' .$row['name'] . ' ' . $row['type']. '</h3>
+                <h2 id="product_price">' .$row['price'] .' $</h2>
                 <p>Material: ' .$row['Material'] .'
                    <br>
                    Gemstone:' .$row['gemstone'] .'
@@ -78,14 +78,17 @@
                 </p>
                 <label for="Own words">Write your own words:</label>
                 <input type="text" placeholder="up to 20 chars">
-                <button type="Add to cart" class="btn btn-primary">Add to cart</button>
+                <p>
+                  <button type="Add to cart" class="btn btn-primary">ADD TO CART</button>
+                  <button type="Add to cart" class="btn btn-primary" onclick="AddtoWishList()">SAVE TO WISHLIST</button>
+                </p>
             </div>
           </form>
         </div>
       </div>
       <div class="col-lg-6 col-md-8 text-center border border-secondary">
         <div class="service-box mt-5 mx-auto">
-          <img src="img/' .$row['picture'] .' ">
+          <img id="product_picture" src="img/' .$row['picture'] .' ">
         </div>
       </div>';
     ?>
@@ -105,6 +108,9 @@
 <!-- Custom scripts for this template -->
 <script src="js/creative.min.js"></script>
 <script src="js/special.js"></script>
+<script src="js/wishlist.js"></script>
+
+
 
 
 </body>
