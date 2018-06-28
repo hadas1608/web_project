@@ -26,15 +26,17 @@
     <link href="css/special.css" rel="stylesheet">
 
   </head>
+
   <body onload="displayWishList()">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="cart.html">shopping cart</a>
+        <a class="navbar-brand js-scroll-trigger" href="cart.html"><i class="fa fa-2x fa-shopping-cart sr-icons"></i></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
+
         </button>
-        <a class="navbar-brand js-scroll-trigger" href="wishlist.html"><img class="logo-img" src="img/rings/wishlist.png"></a>
+        <a class="navbar-brand js-scroll-trigger" href="wishlist.html"><i class="fa fa-2x fa-heart sr-icons"></i></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,23 +49,23 @@
               <a class="nav-link js-scroll-trigger" href="#about">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#Customized">Customized</a>
+              <a class="nav-link js-scroll-trigger" href="customized.html">Customized</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#catalog">Catalog</a>
+              <a class="nav-link js-scroll-trigger" href="catalog.php">Catalog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#stores">Find Store</a>
+              <a class="nav-link js-scroll-trigger" href="product.html">Find Store</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
-
           </ul>
         </div>
       </div>
     </nav>
 
+<<<<<<< HEAD
 
     <section class="bg-white" id="cart">
       <div class="row">
@@ -107,6 +109,66 @@
               </button>
             </div>
           </div>
+=======
+<section class="bg-white" id="cart">
+  <div class="row">
+    <div class="col-lg-10 mx-auto">
+      <h1 class="section-heading">Wish List</h1>
+      <hr class="light my-4">
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-10 col-md-offset-1">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th class="text-center">Total</th>
+              <th> </th>
+            </tr>
+          </thead>
+            <tbody>
+              <tr>
+                <td class="col-sm-8 col-md-6">
+                  <div class="media">
+                    <a href="#"> <img class="media-object" src="img/rings/ring1.jpg"> </a>
+                    <div class="media-body">
+                      <h4 id="product_name">Product name</h4>
+                    </div>
+                  </div></td>
+                    <td class="col-sm-1 col-md-1" style="text-align: center"><input type="email" class="form-control" id="exampleInputEmail1" value="3">
+                    </td>
+                    <td class="col-sm-1 col-md-1 text-center"><strong>$4.87</strong></td>
+                    <td class="col-sm-1 col-md-1 text-center"><strong>$14.61</strong></td>
+                    <td class="col-sm-1 col-md-1">
+                    <button type="button" class="btn btn-warn"><span class="glyphicon"></span> Add to cart
+                    </button></td>
+              </tr>
+              <tr>
+                <td class="col-md-6">
+                <div class="media">
+                  <a href="#" class="cart_pic"> <img src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png"> </a>
+                  <div class="media-body">
+                    <h4 id="product_name">Product name</h4>
+                  </div>
+                </div></td>
+                <td class="col-md-1" style="text-align: left"><input type="email" class="form-control" id="exampleInputEmail1" value="2">
+                </td>
+                  <td class="col-md-1 text-center"><strong>$4.99</strong></td>
+                        <td class="col-md-1 text-center"><strong>$9.98</strong></td>
+                        <td class="col-md-1">
+                        <button type="button" class="btn btn-warn"><span class="glyphicon"></span> Add to cart
+                        </button></td>
+              </tr>
+            </tbody>
+        </table>
+        <div id="wishlist_button">
+          <a href="catalog.php" class="btn btn-primary" role="button">Continue Shopping</a>
+          <a href="cart.html" class="btn btn-primary" role="button">Move to cart</a>
+>>>>>>> b88f1173f49400701a00b789446c564c43dadf9c
         </div>
       </div>
     </section>

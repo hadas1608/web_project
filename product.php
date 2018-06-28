@@ -23,36 +23,41 @@
 <body id="page-top">
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="mainNav">
-  <div class="container">
-    <a class="navbar-brand js-scroll-trigger" href="#cart">shopping cart</a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="index.html#about">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="catalog.php">Catalog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="customized.php">Customized</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="index.html#stores">Find Store</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="index.html#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="cart.html"><i class="fa fa-2x fa-shopping-cart sr-icons"></i></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+        <a class="navbar-brand js-scroll-trigger" href="wishlist.html"><i class="fa fa-2x fa-heart sr-icons"></i></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="customized.html">Customized</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="catalog.php">Catalog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="product.html">Find Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
 
 
