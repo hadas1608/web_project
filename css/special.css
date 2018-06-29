@@ -45,10 +45,16 @@
     width:40px;
 }
 
-.catimg{
-    height:100px;
-    width:100px;
+#catimg{
+    height: 150px;
+    width: 150px;
 }
+
+#product_picture{
+    height: 250px;
+    width: 250px;
+}
+
 
 #dropdownMenu1{
     margin: 0 auto;
