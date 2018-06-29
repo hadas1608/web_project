@@ -45,7 +45,7 @@
                      <a class="nav-link js-scroll-trigger" href="catalog.php">Catalog</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link js-scroll-trigger" href="product.html">Find Store</a>
+                     <a class="nav-link js-scroll-trigger" href="index.html#find_store">Find Store</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link js-scroll-trigger" href="index.html#contact">Contact</a>
@@ -72,35 +72,30 @@
                            <input type="text" placeholder="up to 20 chars">
                            <br><br>
                         </div>
-                        <div class="dropdown">
-                           Material:<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
-                           <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                              <li><a class="dropdown-item" href="#">Gold</a></li>
-                              <li><a class="dropdown-item" href="#">Silver 925</a></li>
-                              <li><a class="dropdown-item" href="#">Gold Plated</a></li>
-                           </ul>
-                        </div>
-                        <br>
-                        <div class="dropdown">
-                           Size(cm):<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
-                           <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                              <li><a class="dropdown-item" href="#">11</a></li>
-                              <li><a class="dropdown-item" href="#">12</a></li>
-                              <li><a class="dropdown-item" href="#">13</a></li>
-                           </ul>
-                        </div>
-                        <br>
-                        <div class="dropdown">
-                           Stone:<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
-                           <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
-                              <li><a class="dropdown-item" href="#">Diamond</a></li>
-                              <li><a class="dropdown-item" href="#">Ruby</a></li>
-                              <li><a class="dropdown-item" href="#">Emerald</a></li>
-                           </ul>
-                        </div>
-                        <br>
-                        <button class="btn btn-basic" enabled id="addtocart" onclick="Validate()" >Add to cart</button>
+                          <select id="material" class="custom-select custom-select-sm" onchange="enable_cart()>
+                            <option selected>Select Material</option>
+                            <option value="11">Gold</option>
+                            <option value="Silver">Silver</option>
+                          </select>
+                        <br><br>
+                         <select id="size" class="custom-select custom-select-sm" onchange="enable_cart()>
+                           <option selected>Select Size</option>
+                           <option value="11">11</option>
+                           <option value="12">12</option>
+                           <option value="13">13</option>
+                         </select>
+                        <br><br>
+                          <select id="stone" class="custom-select custom-select-sm" onchange="enable_cart()">
+                            <option selected>Select Stone</option>
+                            <option value="Diamond">Diamond</option>
+                            <option value="Ruby">Ruby</option>
+                            <option value="Emerald">Emerald</option>
+                          </select>
+
+                        <br><br>
+                        <button id="add_to_cart" class="btn btn-basic" id="addtocart" disabled>Add to cart</button>
                         <button class="btn btn-primary" onclick="AddtoWishList(true)">Save to wishlist</button>
+                        <br><br><br>
                      </div>
                   </form>
                </div>
@@ -123,6 +118,6 @@
       <!-- Custom scripts for this template -->
       <script src="js/creative.min.js"></script>
       <script src="js/wishlist.js"></script>
-      <script src="js/dropdown.js"></script>
+      <script src="js/customized.js"></script>
    </body>
 </html>
