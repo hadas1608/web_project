@@ -25,7 +25,7 @@ function displayWishList() {
             "<strong>"+product.Price+"</strong>\n" +
             "</td>\n" +
             "<td class=\"col-sm-1 col-md-1\">\n" +
-            "<button type=\"button\" class=\"btn btn-warn\">Add to cart</button>\n" +
+            "<button type=\"button\" class=\"btn btn-warn\" title=\"Not implemented\">Add to cart</button>\n" +
             "</td>\n";
 
         row.innerHTML = html;

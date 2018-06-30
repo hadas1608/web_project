@@ -22,8 +22,8 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
          <div class="container">
            <p>
-             <a class="navbar-brand js-scroll-trigger" href="#"><i class="fa fa-2x fa-shopping-cart sr-icons"></i></a>
-             <a class="navbar-brand js-scroll-trigger" href="wishlist.html"><i class="fa fa-2x fa-heart sr-icons"></i></a>
+             <a class="navbar-brand js-scroll-trigger" href="#" title="Cart-Not implemented"><i class="fa fa-2x fa-shopping-cart sr-icons"></i></a>
+             <a class="navbar-brand js-scroll-trigger" href="wishlist.html" title="Wishlist"><i class="fa fa-2x fa-heart sr-icons"></i></a>
            </p>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,22 +31,22 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                     <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+                     <a class="nav-link js-scroll-trigger" href="index.html" title="Home">Home</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link js-scroll-trigger" href="index.html#about">About Us</a>
+                     <a class="nav-link js-scroll-trigger" href="index.html#about" title="About Us">About Us</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link js-scroll-trigger" href="customized.html">Customized</a>
+                     <a class="nav-link js-scroll-trigger" href="customized.html" title="Custom Design">Customized</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link js-scroll-trigger" href="catalog.php">Catalog</a>
+                     <a class="nav-link js-scroll-trigger" href="catalog.php" title="Catalog">Catalog</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link js-scroll-trigger" href="index.html#stores">Find Store</a>
+                     <a class="nav-link js-scroll-trigger" href="index.html#stores" title="Find Store">Find Store</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link js-scroll-trigger" href="index.html#contact">Contact</a>
+                     <a class="nav-link js-scroll-trigger" href="index.html#contact" title="Contact Us">Contact</a>
                   </li>
                </ul>
             </div>
