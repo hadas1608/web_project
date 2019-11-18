@@ -1,0 +1,70 @@
+.container {
+    overflow: hidden;
+}
+
+.filterDiv {
+    /*float: left;*/
+    /*background-color: #2196F3;*/
+    /*color: #ffffff;*/
+    /*width: 100px;*/
+    /*line-height: 100px;*/
+    /*text-align: center;*/
+    /*margin: 2px;*/
+    display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+.cart-pic {
+    width:72px;
+    height:72px;
+}
+
+.media-object {
+    width:72px;
+    height:72px;
+}
+
+#product_name{
+    margin-left:20px;
+}
+
+.section-heading{
+    margin-top:20px;
+}
+
+#wishlist_button{
+    float:right;
+}
+
+.logo-img{
+    height:40px;
+    width:40px;
+}
+
+#catimg{
+    height: 150px;
+    width: 150px;
+}
+
+#product_picture{
+    height: 250px;
+    width: 250px;
+}
+
+
+#dropdownMenu1{
+    margin: 0 auto;
+}
+
+#dropdownMenu2{
+    margin: 0 auto;
+}
+
+#dropdownMenu3{
+    margin: 0 auto;
+}
+
